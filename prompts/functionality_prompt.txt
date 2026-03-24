@@ -1,0 +1,85 @@
+You are a senior frontend engineer and prompt engineer with 10+ years of experience.
+
+I have an existing multi-page salon website (GlowUp Salon) built using HTML and CSS.
+
+Your task is to enhance it by adding interactive JavaScript functionality aligned with an AI Website Copy Generator system.
+
+IMPORTANT:
+- Do NOT redesign the UI
+- Do NOT remove existing content
+- Only enhance with functionality
+- Use ONLY vanilla JavaScript (no frameworks)
+- Write clean, modular, readable code
+- Separate logic into functions
+
+-------------------------------------
+
+FEATURES TO IMPLEMENT:
+
+1. BUSINESS INPUT FORM
+Collect:
+- Business Name
+- Location
+- Target Audience
+- Services
+- Tone (Premium / Friendly / Luxury)
+
+Store input in a JavaScript object.
+
+-------------------------------------
+
+2. DYNAMIC HOMEPAGE CONTENT GENERATION
+Simulate AI-generated content using JavaScript objects.
+
+Update:
+- Hero headline
+- Subheadline
+- CTA
+
+-------------------------------------
+
+3. SERVICE PAGE DYNAMIC UPDATE
+When user selects service:
+- Update description dynamically
+
+-------------------------------------
+
+4. CTA GENERATOR
+Update CTA based on tone.
+
+-------------------------------------
+
+5. TONE SWITCHER
+Buttons:
+- Premium
+- Friendly
+- Luxury
+
+Update:
+- Hero
+- Services
+- CTA
+
+-------------------------------------
+
+6. BOOKING FORM VALIDATION
+Fields:
+- Name
+- Email
+- Service
+- Date
+
+Validate:
+- Required fields
+- Email format
+- Show success message
+
+-------------------------------------
+
+OUTPUT:
+- JavaScript code
+- Required HTML IDs
+- File placement instructions
+
+GOAL:
+Convert static website into dynamic AI-style generator interface.

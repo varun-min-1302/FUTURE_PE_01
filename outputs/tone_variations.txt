@@ -1,0 +1,11 @@
+PREMIUM:
+"Experience Luxury Beauty at GlowUp Salon"
+CTA: Book Your Exclusive Session
+
+FRIENDLY:
+"Look Beautiful Every Day with GlowUp"
+CTA: Book Your Appointment Now
+
+LUXURY:
+"Indulge in Elite Beauty Experiences"
+CTA: Reserve Your Luxury Experience

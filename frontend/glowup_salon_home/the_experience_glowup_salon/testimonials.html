@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Testimonials | GlowUp Salon</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#75584d",
+              "surface-dim": "#dadada",
+              "on-error-container": "#93000a",
+              "primary": "#964261",
+              "on-secondary-fixed": "#241a00",
+              "on-secondary": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#4d4447",
+              "surface-container-highest": "#e2e2e2",
+              "secondary-fixed": "#ffe088",
+              "inverse-primary": "#ffb0c9",
+              "on-surface": "#1a1c1c",
+              "surface-container-high": "#e8e8e8",
+              "tertiary-fixed-dim": "#e4beb2",
+              "secondary-fixed-dim": "#e9c349",
+              "surface-container": "#eeeeee",
+              "on-tertiary-container": "#806358",
+              "surface": "#f9f9f9",
+              "inverse-surface": "#2f3131",
+              "background": "#f9f9f9",
+              "on-primary-fixed": "#3e001e",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#fed65b",
+              "primary-fixed-dim": "#ffb0c9",
+              "secondary": "#735c00",
+              "on-background": "#1a1c1c",
+              "on-tertiary-fixed": "#2b160f",
+              "error-container": "#ffdad6",
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "on-primary-container": "#a34c6c",
+              "inverse-on-surface": "#f1f1f1",
+              "primary-fixed": "#ffd9e2",
+              "on-secondary-fixed-variant": "#574500",
+              "tertiary-fixed": "#ffdbce",
+              "outline": "#7f7478",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#745c00",
+              "error": "#ba1a1a",
+              "surface-variant": "#e2e2e2",
+              "on-primary-fixed-variant": "#792b4a",
+              "surface-bright": "#f9f9f9",
+              "primary-container": "#ffe3e9",
+              "on-tertiary-fixed-variant": "#5b4137",
+              "tertiary-container": "#ffe5dc",
+              "surface-tint": "#964261",
+              "outline-variant": "#d0c3c7"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f9f9f9; color: #1a1c1c; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(24px); }
+    </style>
+</head>
+<body class="bg-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<span class="text-2xl font-bold tracking-tighter text-primary">GlowUp Salon</span>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-zinc-600 hover:text-primary transition-colors font-body font-medium text-lg" href="#">Home</a>
+<a class="text-zinc-600 hover:text-primary transition-colors font-body font-medium text-lg" href="#">Services</a>
+<a class="text-zinc-600 hover:text-primary transition-colors font-body font-medium text-lg" href="#">About</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-body font-medium text-lg" href="#">Testimonials</a>
+<a class="text-zinc-600 hover:text-primary transition-colors font-body font-medium text-lg" href="#">Experience</a>
+</div>
+<button class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-all scale-95 active:scale-90" data-cta-button="">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<!-- Hero Header -->
+<header class="pt-40 pb-20 px-8 relative overflow-hidden">
+<div class="max-w-7xl mx-auto text-center relative z-10">
+<h1 class="font-serif text-6xl md:text-8xl text-on-surface leading-tight tracking-tight mb-6">
+                What Our <span class="italic text-primary">Clients</span> Say
+            </h1>
+<div class="flex flex-col items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star_half</span>
+<span class="font-bold text-2xl ml-2">4.8 / 5.0</span>
+</div>
+<p class="text-on-surface-variant text-xl max-w-2xl font-light">
+                    Join over 5,000+ happy individuals who discovered their radiant confidence at GlowUp.
+                </p>
+</div>
+</div>
+<!-- Decorative background element -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/30 rounded-full blur-3xl"></div>
+</header>
+<!-- Social Proof Wall (Bento Grid) -->
+<main class="max-w-7xl mx-auto px-8 pb-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+<!-- Large Featured Testimonial -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-12 relative flex flex-col justify-between overflow-hidden">
+<span class="material-symbols-outlined text-primary/10 text-9xl absolute -top-4 -left-4 font-black">format_quote</span>
+<div class="relative z-10">
+<div class="flex gap-1 mb-6">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif text-3xl md:text-4xl text-on-surface leading-snug mb-8">
+                        "The Balayage experience was transformative. I've never felt so seen and understood by a stylist. The attention to detail at GlowUp is simply unmatched in Hyderabad."
+                    </p>
+</div>
+<div class="flex items-center gap-4 relative z-10">
+<img alt="" class="w-16 h-16 rounded-full object-cover" data-alt="portrait of a young smiling woman with long wavy hair in a soft studio setting with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDppGVSJljBHSm6A1sZ7Lzmaw0UFzn8m5d5EE2_HxSVADTU_jhUTdBfyDRsT2e1Z8mti9GFssFleF34WLzRJuvEYM_ykQUOFjrXlh2XqOztRmZihfY8772IEOuPnQn38fuTLfYRDK9pypJwDWIVspp2nzhZk11ILNRcEvACtCBa8afKin43SjOecwX-Z4NxKCjhB1cl30oj8oXvuaBsiy53WflLRl8Eq4eCHPTFmmXhzvsMkuol4pQWVAiwsVZsZ1lSz4bOsqKT0ps"/>
+<div>
+<h4 class="font-bold text-on-surface">Priya Sharma</h4>
+<p class="text-on-surface-variant text-sm">Signature Hair Styling</p>
+</div>
+</div>
+</div>
+<!-- Medium Side Testimonial -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body text-lg leading-relaxed mb-6 italic">
+                        "Finally found a place that understands my skin's needs. The HydraFacial left me glowing for weeks."
+                    </p>
+</div>
+<div class="flex items-center gap-3">
+<img alt="" class="w-12 h-12 rounded-full object-cover" data-alt="professional man with a neat beard smiling softly, clean high-end aesthetic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQOq6OMX3AOz_aTPzFV2cPGaHDdxpYWxxzBEVSP-0LsGDxvJRpKIJfu6txvUCpNSRC85nBUeszKPUVx_LfdxpT_Z_scw7h9DRmrxrxYk5yV85nRSIFVoEGn4RoAeyyj7jmQ60e9SojH6AEQPgeCUtU6gz5-sClSuqTosVAzHh9dwb1mcd0TEdX-1GrasNvjBraQMzO7Xfgb5pXsURRJK5oV5TQwJWlRGFCM2vdYbrVLzpX7yEnqE-fOlgKSzMWuaMQZl1HdGmwP4k"/>
+<div>
+<h4 class="font-bold">Animesh Reddy</h4>
+<p class="text-primary-fixed-dim text-xs">Advanced Skin Therapy</p>
+</div>
+</div>
+</div>
+<!-- Smaller Bento Cards -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
+<p class="text-on-surface-variant text-base mb-6 leading-relaxed">
+                    "The ambiance is a retreat in itself. I come here for the peace as much as the expert manicures."
+                </p>
+<div class="flex items-center gap-3">
+<img alt="" class="w-10 h-10 rounded-full object-cover" data-alt="close-up of a stylish young woman with elegant makeup and jewelry, aesthetic soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8ZJUhsfVHk6a18Vo6l795hkA4fv7dIWGPAfsR_aYfvLj_VExUTWIWYFjEOYHjbwOk0RFskro-_6YAl3Xk73oJB2lFpWj-EB3ebJvjYeHD8AdAZJsRSyuwbtMSnPKqmIju57R7kxVDb_4vCMYhFI5vs0a7bHMWn4iCTDFRA5hf0UlQXYUEjbu--FKvFstIYL-fDWmlzqpsOzLEv1sLiyLiSjG69gIv3TFEN4Lwnyd0zgs3ukoxwblgZwuD2_yyVJhAdmxS1ePQ3K4"/>
+<h4 class="font-semibold text-on-surface text-sm">Sneha Kapur</h4>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between border border-outline-variant/10">
+<p class="text-on-surface-variant text-base mb-6 leading-relaxed">
+                    "Bridal makeup was exactly how I envisioned. Natural yet regal. Thank you GlowUp team!"
+                </p>
+<div class="flex items-center gap-3">
+<img alt="" class="w-10 h-10 rounded-full object-cover" data-alt="elegant woman with bridal glow and intricate jewelry, warm luxurious indoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUqviAeFzKM9xhdrN6L4fS_xZ5-7LT8nOlP23JCvVJIauQVOXAaVES_BlnQfNiH1aMQ3RejE2NrWUKZ8WqCi4dz3MShpiguWw5TRLJtf5KXcA-F0HrOP-94XtGgORKoEfWELwD8FrnaD__nMz0hJh0B_jKzIBdU0z41W5llqCCrq9Aq6wNKijsKQS8dZkaDTdNIgnoXhzpZYA0jJImH3U_wQJT-AN7QDmcYzb1PzovLe0uceA3RjNM13KwJAohNpQ2MB5W5JgmQgg"/>
+<h4 class="font-semibold text-on-surface text-sm">Meera V.</h4>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
+<p class="text-on-surface-variant text-base mb-6 leading-relaxed">
+                    "The most professional men's grooming service I've experienced. Sharp cuts and great products."
+                </p>
+<div class="flex items-center gap-3">
+<img alt="" class="w-10 h-10 rounded-full object-cover" data-alt="handsome man with styled hair and sharp grooming, moody professional studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTjJzAWX990et9eOUDdDOpIdICpaMBzHOfXNBCXPzdDYPvvtQk3pUBTGm5wWRDzmgGdQRtHSeR87uJLyINSte5v41dB0ggmElulSFbmyH1Hf3UpkHCbczZRN9Te1eQhzqjB6Gzb6IzVSjSh4Pathg1GsumwKCQcey3eb29eSefTR8KmTV_F_JS5AAwW2P24HVjHvnReIzzAsMTFueqyrmeXoIOHXBh7WdieVKL3KXSNt4smk7BzAx0eVrSXywnZVBXfs7Yewz0I2Q"/>
+<h4 class="font-semibold text-on-surface text-sm">Vikram Seth</h4>
+</div>
+</div>
+</div>
+</main>
+<!-- Real Transformations Section -->
+<section class="bg-surface-container-low py-32 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-serif text-5xl text-on-surface mb-6 leading-tight">Real <span class="italic text-primary">Transformations</span></h2>
+<p class="text-on-surface-variant text-lg">Witness the artistry of our specialists. No filters, just expert hands and premium products.</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Transformation Card 1 -->
+<div class="group">
+<div class="relative rounded-xl overflow-hidden mb-6 aspect-[4/5] bg-surface-container-highest">
+<div class="absolute inset-0 grid grid-cols-2 h-full">
+<div class="relative overflow-hidden h-full">
+<img alt="" class="object-cover w-full h-full grayscale-[0.3]" data-alt="close up of dry frizzy hair texture before salon treatment, neutral lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR53miowrEdfH9Ja3T0KmRtsKFliGKpdjGmlpbqyjHOlhdrIuhyTmhO7VEus982zV5pUUL5UA46QJ2nLMEN3gsac4lI__PTAr1WAkhbrGS6-89asr6xn2asLmyUK5fwDbtKsZFFPxsGkP52WRPPkoYtfARPJR2kj04iiqlUTV1vfVm5VaVdTgYZB-r9hoqBWihodWLUIA2EofuUJVlFNOIXHUld7_o9lYqJUT1M4aBvOBpoUMIvmlcDYWUELgmw62fgRR0xgUo8hw"/>
+<span class="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Before</span>
+</div>
+<div class="relative overflow-hidden h-full border-l-2 border-white">
+<img alt="" class="object-cover w-full h-full" data-alt="close up of silky smooth glossy hair after professional keratin treatment, soft ethereal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgVBDy3MGdryTujgGMOx9o-ws66mxXC7RGzOPjO43Kr2aJ7Q5odOtZtiKw_erh_Bl6vgrsHaENB-wPBC25CrB51Vvc4a0vQFyPiSFMPgknabiEG_uX2LusD4PZ4pPDHVhZBPVC3WFy_E6yDhx0qb8_m8HOm6IQObk2ji71rQf2-95OhHaHGHLd7KbfUzcQOFHlNlmXS71gQ0wpWl9je361bHmOSUOry0DYg1bP9pKka8PkUhJAKmx8fjtwrMQRdXnB2e0MkyPNIDE"/>
+<span class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">After</span>
+</div>
+</div>
+</div>
+<h3 class="font-serif text-2xl text-on-surface mb-2">Keratin Glow Treatment</h3>
+<p class="text-on-surface-variant text-sm font-body uppercase tracking-widest">Duration: 3 Hours</p>
+</div>
+<!-- Transformation Card 2 -->
+<div class="group">
+<div class="relative rounded-xl overflow-hidden mb-6 aspect-[4/5] bg-surface-container-highest">
+<div class="absolute inset-0 grid grid-cols-2 h-full">
+<div class="relative overflow-hidden h-full">
+<img alt="" class="object-cover w-full h-full grayscale-[0.3]" data-alt="close up of dull skin with slight redness before facial therapy, clinical lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMB2TDc8gshKfvxaTVZDsdz2lOOm_MMXdMr21kqgxl5FRpV3xbKpu5FUT7vv56F1gVekqgcFcxhA7cV7y0dwZk-8cuw6LWtq1jdg1k3MwMGhVQrv-FFFNDNCSH3s2n6svNjPCFxjRxTLUjpqemXsTPw0ZWAjDHHHmgrKQp2V31KMnn72NC1yiIUIImonldKTpZBJxoPHs08gT-JIk1IFInq_xCJVrA0mCSoMXApPzvl44RqV5e9hB0ZyVKhShaAGT6287IQg_QX0w"/>
+<span class="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Before</span>
+</div>
+<div class="relative overflow-hidden h-full border-l-2 border-white">
+<img alt="" class="object-cover w-full h-full" data-alt="close up of radiant glowing clear skin after hydrafacial treatment, soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK8Nre3urvpZ1Smg8Qu2rDBaI-KU_TohBlcJQvAKoohbsliugYvekfLdggedzs_nINRat1BapAn-H1x6-AN1nsKwHKgkzFFvVQMd-1NVoNVMC3Bvw9M6aX6rJcrauo6WyL7G7nSRKfgjOpWyXK09h_iO31UHbCFNFpPFLEyThSZPH4KNwqxXNAs4OX9Cc5mI7YV39WgwiKqxdfjnsHQuQZ-57KTXQsvj7-Z_yg7AbcSKIwTYAc_-3gyiPtZ7l1uXTgcH23P_dO8FM"/>
+<span class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">After</span>
+</div>
+</div>
+</div>
+<h3 class="font-serif text-2xl text-on-surface mb-2">Deep Hydration Facial</h3>
+<p class="text-on-surface-variant text-sm font-body uppercase tracking-widest">Duration: 90 Mins</p>
+</div>
+<!-- Transformation Card 3 -->
+<div class="group">
+<div class="relative rounded-xl overflow-hidden mb-6 aspect-[4/5] bg-surface-container-highest">
+<div class="absolute inset-0 grid grid-cols-2 h-full">
+<div class="relative overflow-hidden h-full">
+<img alt="" class="object-cover w-full h-full grayscale-[0.3]" data-alt="overgrown dull hair color with roots showing before salon styling, flat lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlXvtW8UJt_aJ_hpCjIcxAMnqJMi4737xtXUN4CeHSK2x90M3Dq_zU3NDgRASVYxUIr80AxI60znDxKLTiMdSixylG-695cTdBqUMC1uDmShWsi9YecrpPpebes-dQ_9YTFkaYjAgB1aEa6jV_Y517UNVzVnED65UVKSeMMmK-DqTN_TZ48p85rJpmKU22JKi-W8jxRfgRsnm-ymQt2X2CXaSBSvx0QcaGSKDEo8eWnL094m-QKm4pHaFKWyRXDuiOGWIOm3YPj2Y"/>
+<span class="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Before</span>
+</div>
+<div class="relative overflow-hidden h-full border-l-2 border-white">
+<img alt="" class="object-cover w-full h-full" data-alt="vibrant multidimensional honey blonde balayage hair color with soft waves, sun-kissed lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACfvIWp6j0xRlhYDkY8d7imH4KGsJIbdTO-xdJBp35PhJI-pSAXkggsadC0hJ-8tFxILTQLB16wN9yWC83qsKLp59z0uG3ybP7iEyWZfvcxpCAhVG-6C6zcYYlcKoS2zx4mLzvYhRYMgvAZlD5E3zRtBmLnnB9a7GHPlU7siljvV5PWP_-l5yARKxAqBNwIGra4h3mKFqcslgMj_NHE5Tp8tq8so3A6BjX5theSWZh0R_FVkejDfguRQ_0-aKBY8aSYZWXR7ui-aA"/>
+<span class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">After</span>
+</div>
+</div>
+</div>
+<h3 class="font-serif text-2xl text-on-surface mb-2">Honey Balayage</h3>
+<p class="text-on-surface-variant text-sm font-body uppercase tracking-widest">Duration: 4 Hours</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 px-8">
+<div class="max-w-5xl mx-auto bg-primary rounded-xl overflow-hidden relative">
+<div class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&amp;fit=crop&amp;q=80&amp;w=1000')] bg-cover bg-center"></div>
+<div class="relative z-10 p-16 md:p-24 text-center">
+<h2 class="font-serif text-4xl md:text-6xl text-on-primary mb-8 leading-tight">Ready for Your <span class="italic text-secondary-fixed">Transformation?</span></h2>
+<p class="text-primary-fixed text-xl mb-12 max-w-2xl mx-auto">Experience the intersection of luxury and expertise. Your glow journey starts with a single click.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform active:scale-95 shadow-xl" data-cta-button="">
+                        Book Your Experience Now
+                    </button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all">
+                        View Pricing
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#f3f3f3]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-12 py-16">
+<div class="flex flex-col gap-6">
+<span class="font-serif text-xl font-semibold text-primary">GlowUp Salon</span>
+<p class="font-body text-sm text-zinc-600">The premier luxury atelier for sophisticated aesthetics in the heart of Hyderabad.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70">language</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70">camera_alt</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70">share</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bold text-on-surface mb-2">Quick Links</h5>
+<a class="text-zinc-500 hover:text-primary transition-transform duration-200 hover:translate-x-1 text-sm" href="#">Services</a>
+<a class="text-zinc-500 hover:text-primary transition-transform duration-200 hover:translate-x-1 text-sm" href="#">Our Team</a>
+<a class="text-zinc-500 hover:text-primary transition-transform duration-200 hover:translate-x-1 text-sm" href="#">Packages</a>
+<a class="text-zinc-500 hover:text-primary transition-transform duration-200 hover:translate-x-1 text-sm" href="#">Gift Cards</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bold text-on-surface mb-2">Legal</h5>
+<a class="text-zinc-500 hover:text-primary transition-transform duration-200 hover:translate-x-1 text-sm" href="#">Privacy Policy</a>
+<a class="text-zinc-500 hover:text-primary transition-transform duration-200 hover:translate-x-1 text-sm" href="#">Terms of Service</a>
+<a class="text-zinc-500 hover:text-primary transition-transform duration-200 hover:translate-x-1 text-sm" href="#">Contact Us</a>
+<a class="text-zinc-500 hover:text-primary transition-transform duration-200 hover:translate-x-1 text-sm" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bold text-on-surface mb-2">Visit Us</h5>
+<p class="text-zinc-500 text-sm">Banjara Hills, Road No. 12<br/>Hyderabad, TS 500034</p>
+<p class="text-zinc-500 text-sm mt-2">Mon - Sun: 10AM - 8PM</p>
+<p class="text-primary font-bold text-sm mt-4">+91 98765 43210</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-zinc-200">
+<p class="font-body text-sm text-zinc-600 text-center">© 2024 GlowUp Salon Hyderabad. All rights reserved.</p>
+</div>
+</footer>
+<script src="../main.js"></script>
+</body></html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GlowUp Salon | The Ethereal Atelier Hyderabad</title>
+<meta content="Experience premium beauty transformations at GlowUp Salon, Hyderabad. Expert styling, glowing skin, and luxury care tailored for you." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f9f9f9",
+              "on-primary-container": "#a34c6c",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#4d4447",
+              "error-container": "#ffdad6",
+              "surface-bright": "#f9f9f9",
+              "tertiary-fixed": "#ffdbce",
+              "secondary-container": "#fed65b",
+              "on-tertiary-fixed-variant": "#5b4137",
+              "on-surface": "#1a1c1c",
+              "primary": "#964261",
+              "surface-container-highest": "#e2e2e2",
+              "inverse-surface": "#2f3131",
+              "primary-fixed-dim": "#ffb0c9",
+              "surface-container-high": "#e8e8e8",
+              "on-primary": "#ffffff",
+              "inverse-primary": "#ffb0c9",
+              "on-background": "#1a1c1c",
+              "on-secondary-fixed-variant": "#574500",
+              "on-tertiary-container": "#806358",
+              "primary-fixed": "#ffd9e2",
+              "on-error": "#ffffff",
+              "tertiary": "#75584d",
+              "on-secondary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-tint": "#964261",
+              "outline-variant": "#d0c3c7",
+              "outline": "#7f7478",
+              "tertiary-container": "#ffe5dc",
+              "on-error-container": "#93000a",
+              "secondary": "#735c00",
+              "on-primary-fixed": "#3e001e",
+              "secondary-fixed": "#ffe088",
+              "background": "#f9f9f9",
+              "surface-variant": "#e2e2e2",
+              "on-secondary-container": "#745c00",
+              "surface-container": "#eeeeee",
+              "on-primary-fixed-variant": "#792b4a",
+              "primary-container": "#ffe3e9",
+              "surface-container-low": "#f3f3f3",
+              "inverse-on-surface": "#f1f1f1",
+              "error": "#ba1a1a",
+              "on-secondary-fixed": "#241a00",
+              "secondary-fixed-dim": "#e9c349",
+              "tertiary-fixed-dim": "#e4beb2",
+              "surface-dim": "#dadada",
+              "on-tertiary-fixed": "#2b160f"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(150, 66, 97, 0.2);
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #964261 0%, #a34c6c 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-fixed-variant">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-4 max-w-full mx-auto glass-nav shadow-sm shadow-rose-900/5">
+<div class="text-2xl font-serif italic text-rose-900 dark:text-rose-100 font-headline">GlowUp Salon</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-rose-900 dark:text-rose-100 font-semibold border-b-2 border-rose-900 dark:border-rose-400 pb-1 font-label" href="#">Services</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-rose-800 transition-colors font-label" href="#">About</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-rose-800 transition-colors font-label" href="#">Testimonials</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-rose-800 transition-colors font-label" href="#">Experience</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-semibold hover:opacity-80 transition-all duration-300 scale-95 md:scale-100 active:scale-90" data-cta-button="">
+            Book Appointment
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<!-- Background Decor -->
+<div class="absolute inset-0 z-0 bg-gradient-to-br from-primary-container/30 via-surface to-tertiary-container/20"></div>
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-surface to-transparent"></div>
+<div class="container mx-auto px-6 md:px-12 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-low text-primary text-sm font-semibold tracking-wide uppercase">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
+                    The Ethereal Atelier
+                </div>
+<h1 class="text-5xl md:text-7xl font-headline leading-[1.1] text-on-surface" id="hero-headline">
+                    Ready to <span class="italic text-primary">Glow</span> &amp; <br/>Feel Confident?
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-lg" id="hero-subheadline">
+                    Experience premium transformations tailored just for you. From expert styling to glowing skin, discover the best version of yourself.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="signature-gradient text-on-primary px-10 py-4 rounded-full text-lg font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-transform" data-cta-button="" id="hero-cta">
+                        Book Appointment
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-10 py-4 rounded-full text-lg font-semibold hover:bg-surface-container-high transition-colors">
+                        View Services
+                    </button>
+</div>
+<div class="flex items-center gap-4 pt-6">
+<div class="flex -space-x-3">
+<img class="w-10 h-10 rounded-full border-2 border-surface" data-alt="portrait of a smiling woman with glowing skin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdsbUQVWhPwnfnU_3W8egzOF5rvLaQ59MoG4BD4i-4LbmkJQxXfEJWfkFxhHWVlm_aCdZiqIjuFpwhcrISIAS70qdcSl1Pfr5ADpjIz-HlNxDu3jvMtsngEhPqFCpb-QpjA7GVz2yqtq6-j0bTp50dxpZnWXUZmGGJ5oGQvful3iouWITG4ulk8B84k0wfKJs5hTyltyh2f5w6_S9g4tUExdWM7aySn5uvCCsR6Ugpt3HfSjpqLz13yRD1q5zHzdIzK4Gi1g3YG1E"/>
+<img class="w-10 h-10 rounded-full border-2 border-surface" data-alt="close up of woman with elegant haircut" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK1tpmzyoVx-yD70M6mqlKig5o54u6CfDnaHcIsa9hr32SO1Dw6WiCLcGeT5riGeYJf8LyOjcnJdBMHlX-EE-Gpo2QeS4bn302Ndf8h7-7z_WmhDZuWfE75HtnK7GnyiaLww2zDHBITHJq-jfE5HPEevhrmuVLpyYVVmQrEpLEtPdmco-Fqv-1Gok2_bRxWqX0AooFponKfSlz6wCxcXnG6D76BIhI8kEhL5beGxHKlLbmuSk3QHz0dmwIZkIHMlQQ27kjU8gBDfc"/>
+<img class="w-10 h-10 rounded-full border-2 border-surface" data-alt="smiling woman with professional makeup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1WFCK9BEfypbY77PItaGtomXMoQTh7b0jtBWNF94TyGwJimK0kbR9JjOblSgVLGuwn1pe2j6kcKKW5-_1bqjogxIH5fsVAr8atM98H_SkhTFZSnM2RHB1iDGSzN3wCprFEc8mKRIAP-cAyiAK6LpS5ThT7Ju9dla4Yq10EziJdPHw8XaedXfxiFSCeL7d5YD8OXs722j2Mfr4gldU043Zym7EFYIevK8otQy6XUraSZK5n0zx4aC7wczLVsVpqGI20pJZjH55sJo"/>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">Trusted by <span class="text-primary font-bold">1000+</span> Happy Clients</span>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="relative z-10 rounded-t-[10rem] rounded-b-xl overflow-hidden shadow-2xl">
+<img class="w-full h-[600px] object-cover" data-alt="professional hair stylist working in a luxury minimal salon with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsBSf-BlyCH0O6HUn5Y7GwQ7z6a5AuL82VjRr3bMWbBlzuwITV9Pcmcht0E9g0KkC94WNTnC-VoPmfBXcvwzoYHC9P-eJofbUv9JctwubtGLsKvjOlDQVXgii5A6cTvvKuMmuSHHR5fQqKYQ1nPGS_H78ExI0N1Jkq3-8tE23pUqZXRt-_T9jyyUVjsz_rodBg1gzyeZ8ifk-QqN_-BIsN0TjugWK9QgrqC0SdY9gsFHYuz9kwr3SWU_NP8toPS6gYqIwePOnuDvE"/>
+</div>
+<!-- Asymmetric overlapping element -->
+<div class="absolute -bottom-10 -left-10 z-20 bg-surface-container-lowest p-8 rounded-xl shadow-2xl max-w-xs">
+<div class="flex gap-1 text-secondary mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-sm italic font-serif text-on-surface-variant leading-relaxed">
+                        "The best transformation I've had in Hyderabad. The atmosphere is purely ethereal."
+                    </p>
+<p class="mt-4 text-xs font-bold uppercase tracking-widest text-primary">— Ananya R.</p>
+</div>
+</div>
+</div>
+</header>
+<!-- AI Copy Generator -->
+<section class="py-20 bg-surface">
+<div class="container mx-auto px-6 md:px-12">
+<div class="grid lg:grid-cols-2 gap-8 items-start">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+<span class="text-xs font-bold uppercase tracking-[0.3em] text-primary">AI Website Copy Generator</span>
+<h2 class="text-3xl md:text-4xl font-headline mt-4">Build Your Business Profile</h2>
+<p class="text-on-surface-variant mt-3 leading-relaxed">Capture the business details once, then let the site adapt its tone, homepage copy, and conversion messaging automatically.</p>
+<form class="grid gap-5 mt-8" id="business-input-form">
+<div>
+<label class="block text-sm font-semibold mb-2" for="business-name">Business Name</label>
+<input class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-3 focus:border-primary focus:ring-primary" id="business-name" name="businessName" type="text" value="GlowUp Salon"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2" for="business-location">Location</label>
+<input class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-3 focus:border-primary focus:ring-primary" id="business-location" name="location" type="text" value="Hyderabad"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2" for="target-audience">Target Audience</label>
+<input class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-3 focus:border-primary focus:ring-primary" id="target-audience" name="targetAudience" type="text" value="Modern professionals and brides"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2" for="business-services">Services</label>
+<input class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-3 focus:border-primary focus:ring-primary" id="business-services" name="services" type="text" value="Haircut, Facial, Bridal Makeup, Hair Coloring"/>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2" for="tone-select">Tone</label>
+<select class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-3 focus:border-primary focus:ring-primary" id="tone-select" name="tone">
+<option value="premium">Premium</option>
+<option value="friendly">Friendly</option>
+<option value="luxury">Luxury</option>
+</select>
+</div>
+<button class="signature-gradient text-on-primary px-8 py-4 rounded-full text-base font-bold shadow-xl shadow-primary/20 hover:scale-[1.01] transition-transform" type="submit">
+                    Generate Website Copy
+                </button>
+</form>
+<p class="mt-4 text-sm text-on-surface-variant" id="generator-status">Using the current GlowUp Salon profile.</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl shadow-sm">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+<div>
+<span class="text-xs font-bold uppercase tracking-[0.3em] text-primary">Tone Switcher</span>
+<h3 class="text-3xl font-headline mt-4">Adjust the Voice Instantly</h3>
+</div>
+<p class="text-sm text-on-surface-variant max-w-sm" id="business-summary">GlowUp Salon in Hyderabad serves modern professionals and brides with Haircut, Facial, Bridal Makeup, Hair Coloring.</p>
+</div>
+<div class="flex flex-wrap gap-3" id="tone-switcher">
+<button class="rounded-full border border-outline-variant bg-surface-container-lowest px-5 py-3 text-sm font-semibold text-on-surface transition-colors hover:border-primary hover:text-primary" data-tone-button="" data-tone-value="premium" type="button">Premium</button>
+<button class="rounded-full border border-outline-variant bg-surface-container-lowest px-5 py-3 text-sm font-semibold text-on-surface transition-colors hover:border-primary hover:text-primary" data-tone-button="" data-tone-value="friendly" type="button">Friendly</button>
+<button class="rounded-full border border-outline-variant bg-surface-container-lowest px-5 py-3 text-sm font-semibold text-on-surface transition-colors hover:border-primary hover:text-primary" data-tone-button="" data-tone-value="luxury" type="button">Luxury</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<p class="text-xs font-bold uppercase tracking-[0.25em] text-primary">Live AI Preview</p>
+<h4 class="text-3xl font-headline mt-4 leading-tight" id="generated-headline-preview">Ready to Glow &amp; Feel Confident?</h4>
+<p class="mt-4 text-on-surface-variant leading-relaxed" id="generated-subheadline-preview">Experience premium transformations tailored just for you. From expert styling to glowing skin, discover the best version of yourself.</p>
+<p class="mt-6 text-sm text-on-surface-variant">Primary CTA: <span class="font-semibold text-on-surface" id="generated-cta-preview">Book Appointment</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Section -->
+<section class="py-20 bg-surface-container-low">
+<div class="container mx-auto px-6 md:px-12 text-center">
+<div class="flex flex-col md:flex-row items-center justify-around gap-12">
+<div class="flex flex-col items-center">
+<span class="text-4xl font-headline font-bold text-primary">4.8/5</span>
+<span class="text-sm font-label uppercase tracking-widest mt-2 text-on-surface-variant">Google Rating</span>
+</div>
+<div class="grid md:grid-cols-2 gap-8 text-left max-w-4xl">
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm">
+<p class="text-on-surface-variant italic">"GlowUp Salon redefined my bridal look. Their attention to detail and premium products made me feel like royalty."</p>
+<div class="flex items-center gap-3 mt-4">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="text-xs font-bold uppercase text-on-surface">Priya Sharma, Banjara Hills</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-sm">
+<p class="text-on-surface-variant italic">"Expert stylists who actually listen! My hair coloring was exactly what I wanted. Best salon in Hyderabad hands down."</p>
+<div class="flex items-center gap-3 mt-4">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="text-xs font-bold uppercase text-on-surface">Sneha V., Gachibowli</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 container mx-auto px-6 md:px-12 overflow-hidden">
+<div class="grid md:grid-cols-2 gap-20 items-center">
+<div class="relative order-2 md:order-1">
+<div class="rounded-xl overflow-hidden shadow-xl">
+<img class="w-full h-[500px] object-cover scale-105" data-alt="interior of a luxury salon with minimalist decor, plants, and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDULNP9_U1BwMnAkqVnHBnT4t-VYtKx_ZAmaHAou2MM-6eugs4lQu1Qc4m5o2-BZ72irygVckatdQZqwQ1D1oR2N3BX9lxyTUdvrzlWCfZm0zY-KTqrtyHqXguKRHMpjOkNtmW9GBCecZstGBd42XD7kJcerJ0TKusnY3ElcrVZ5dpQgOH8VSKXuR9_y6wQ9NBDWBJ6QTX8SxKUQ2mYqVT2Iot5oP2aWQ0JDO0PXcI4M5U0TEKKCTSjDzfZOUZn86G7PTSMtE7WtCQ"/>
+</div>
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-tertiary-container rounded-full -z-10"></div>
+<div class="absolute -bottom-6 -left-6 bg-primary text-on-primary p-6 rounded-lg shadow-xl">
+<span class="text-3xl font-headline block">10+</span>
+<span class="text-xs uppercase tracking-tighter">Years of Excellence</span>
+</div>
+</div>
+<div class="space-y-8 order-1 md:order-2">
+<h2 class="text-4xl md:text-5xl font-headline leading-tight">Our Story: Where <br/><span class="italic text-primary">Beauty Meets Care</span></h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                    At GlowUp, we believe beauty is more than skin deep. Our certified experts use only premium products to provide personalized service that leaves you feeling refreshed and confident. 
+                </p>
+<div class="grid grid-cols-2 gap-6 pt-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<div>
+<span class="font-bold block">Certified Experts</span>
+<span class="text-sm text-on-surface-variant">Global Training</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">spa</span>
+<div>
+<span class="font-bold block">Premium Products</span>
+<span class="text-sm text-on-surface-variant">Cruelty-Free Brands</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="container mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl md:text-5xl font-headline mb-6">Bespoke <span class="italic">Services</span></h2>
+<p class="text-on-surface-variant">Carefully curated experiences designed to highlight your natural radiance. Select from our signature treatments.</p>
+</div>
+<div class="hidden md:block">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full flex items-center justify-center border border-outline-variant text-outline hover:bg-primary hover:text-on-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined">chevron_left</span>
+</div>
+<div class="w-12 h-12 rounded-full flex items-center justify-center border border-outline-variant text-outline hover:bg-primary hover:text-on-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">content_cut</span>
+</div>
+<h3 class="text-2xl font-headline mb-4">Haircut &amp; Styling</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed" data-service-description="haircut">Precision cuts that frame your unique beauty. Sculpted by masters.</p>
+<div class="flex justify-between items-center pt-6 border-t border-surface-container">
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Starting from</span>
+<span class="text-primary font-bold">₹1,200</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">palette</span>
+</div>
+<h3 class="text-2xl font-headline mb-4">Hair Coloring</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed" data-service-description="hair-coloring">Vibrant tones and seamless balayage using nourishing pigments.</p>
+<div class="flex justify-between items-center pt-6 border-t border-surface-container">
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Starting from</span>
+<span class="text-primary font-bold">₹3,500</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+<div class="w-16 h-16 rounded-full bg-tertiary-container flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl">face_6</span>
+</div>
+<h3 class="text-2xl font-headline mb-4">Facial &amp; Skincare</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed" data-service-description="facial">Radiant skin that lasts. Deep hydration and glow therapy.</p>
+<div class="flex justify-between items-center pt-6 border-t border-surface-container">
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Starting from</span>
+<span class="text-primary font-bold">₹2,800</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">flare</span>
+</div>
+<h3 class="text-2xl font-headline mb-4">Bridal Makeup</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed" data-service-description="bridal">Timeless elegance for your special day. HD and Airbrush finish.</p>
+<div class="flex justify-between items-center pt-6 border-t border-surface-container">
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Starting from</span>
+<span class="text-primary font-bold">₹15,000</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-32 container mx-auto px-6 md:px-12">
+<div class="text-center max-w-2xl mx-auto mb-20">
+<h2 class="text-4xl md:text-5xl font-headline mb-6">Why <span class="italic">Choose Us</span></h2>
+<p class="text-on-surface-variant">The difference is in the details. We prioritize your comfort and results above all else.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-10">
+<div class="flex flex-col items-center text-center space-y-4">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">person_check</span>
+</div>
+<span class="font-bold text-sm uppercase tracking-wide">Expert Stylists</span>
+</div>
+<div class="flex flex-col items-center text-center space-y-4">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">payments</span>
+</div>
+<span class="font-bold text-sm uppercase tracking-wide">Affordable Luxury</span>
+</div>
+<div class="flex flex-col items-center text-center space-y-4">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">chat</span>
+</div>
+<span class="font-bold text-sm uppercase tracking-wide">Personalized Consultation</span>
+</div>
+<div class="flex flex-col items-center text-center space-y-4">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">sanitizer</span>
+</div>
+<span class="font-bold text-sm uppercase tracking-wide">Hygienic Environment</span>
+</div>
+<div class="flex flex-col items-center text-center space-y-4 col-span-2 md:col-span-1">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
+</div>
+<span class="font-bold text-sm uppercase tracking-wide">Latest Trends</span>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="py-32 relative bg-surface overflow-hidden">
+<div class="container mx-auto px-6 md:px-12">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2 space-y-8">
+<h2 class="text-4xl md:text-6xl font-headline leading-tight">The <span class="italic">GlowUp</span> Experience</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                        Step into a sanctuary of calm. Beyond styling, we offer an immersive escape from the hustle of Hyderabad. 
+                    </p>
+<ul class="space-y-6">
+<li class="flex items-center gap-4">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-lg">Relaxing environment with minimalist aesthetic</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-lg">Complimentary gourmet beverages</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-lg">Premium, quiet atmosphere for complete rejuvenation</span>
+</li>
+</ul>
+</div>
+<div class="lg:w-1/2 grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<img class="rounded-xl h-64 w-full object-cover" data-alt="close up of a refreshing glass of infused water with mint in a luxury salon setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_1hDd-N39PQLQylztSa2hLBfq6lJ6nGKvSgDDZJyasY_X6SJwfTk23GQYRhjr2ypWrgutdvzKociIJAlryWEh_D_V6xFSMgt5Xq4T-cDf69XL4_EanO9RpO1Qp_SeK9VI52xGrvUuGCr2vI2XXrkY2trIq6RJZOOauoUZD73NQr4Mn-4Zo2hKCNz8OlKAMvAYuo738EohZawe2gtFKoM-DTiWSFb5LM6XgrX7EfGruUyaZMnaacJ6acDXB8ezJGNr4AFs1_-o9OU"/>
+<img class="rounded-xl h-80 w-full object-cover" data-alt="calm aesthetic image of soft towels and aromatic candles in a spa room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4sgI3jWyhMVDkeKAIk9TaAG-8-kYzQ583SVnxzvfrRyhQiUXFfWKft9ZWRbW_IjNFHJI4DtmJOFid-gLYdz5abrhlER8pGzmGc9ue5konUm0kEvO6h9uGVuBDAxWQzgsb99IG4uhx_M367mApvHgbvwlU2bDFllVMMwwh3-SkfkjgggAkyx8zChtvCjp5OoBxmNmewGYsIv8yY7n4LI_1LoyZoBcLx3QlzQdFf_hsuxeauHNJguDp644KiOC_NgpwZopu3lYOhvI"/>
+</div>
+<div class="space-y-4 pt-12">
+<img class="rounded-xl h-80 w-full object-cover" data-alt="professional stylist applying luxury hair product with gentle hands" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8oR6BafKpOTkK6I5W-ha0LKRRp8NNZMNGXomEgrUGQelSIyoa4Tm7d93CMLTZPNy3v1a3RjX76S0h3N5psQy2MzZC5oW_YgtCYmxbZ0ccZCcmUGRyu6XmwM2yDwWoDtW5eZ8ua4E1czPWC3Xb3fadPEfU-AQBroNUCHic2WkqL3SuFWO0qXZjlpEt2AjHNwU3hzgrBXuUb3hM2LxSGb3DEYK1RMgIXszbMm1AfF6qCnV0_uPr2zak9N9ANzo34qDmlG9c8dXFsJ4"/>
+<img class="rounded-xl h-64 w-full object-cover" data-alt="modern luxury salon chairs and mirrors with warm bokeh lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtRPf0Mji74vs0BY6GJqD59zgwLikRVJ5W4ro598Oj5uBidzauBnMMlrQwA2Ys-31OGuTzXZhKnFa7C6hERMHbZNNUx6tJRZj3iVfdtV4wtGAE5SngZIbAKg_OK68B5GvTCf8L2uzzo9PBg8-j8t4PLXBXCXDTdTinA_qWqIUx5I4WOFB6UUiQE8zYnhqluZKTnCWlRozoiQ6sMKYLbV29ETQwia3VVuYsrDh3zr5i1WvRuiHiqvcwvXY1yC6dHDTSy7zXEuPbIPo"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Form -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-6 md:px-12">
+<div class="grid lg:grid-cols-2 gap-10 items-start">
+<div class="space-y-6">
+<span class="text-xs font-bold uppercase tracking-[0.3em] text-primary">Booking Assistant</span>
+<h2 class="text-4xl md:text-5xl font-headline">Reserve Your Glow Session</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">A streamlined booking form for consultations, treatments, and bridal appointments. Every field is validated before we confirm your request.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+<form class="space-y-5" id="booking-form" novalidate="">
+<div>
+<label class="block text-sm font-semibold mb-2" for="booking-name">Name</label>
+<input class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-3 focus:border-primary focus:ring-primary" id="booking-name" name="name" type="text"/>
+<p class="mt-2 hidden text-sm text-error" id="booking-name-error"></p>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2" for="booking-email">Email</label>
+<input class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-3 focus:border-primary focus:ring-primary" id="booking-email" name="email" type="email"/>
+<p class="mt-2 hidden text-sm text-error" id="booking-email-error"></p>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2" for="booking-service">Service</label>
+<select class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-3 focus:border-primary focus:ring-primary" id="booking-service" name="service">
+<option value="">Select a service</option>
+<option value="Haircut &amp; Styling">Haircut &amp; Styling</option>
+<option value="Hair Coloring">Hair Coloring</option>
+<option value="Facial &amp; Skincare">Facial &amp; Skincare</option>
+<option value="Bridal Makeup">Bridal Makeup</option>
+</select>
+<p class="mt-2 hidden text-sm text-error" id="booking-service-error"></p>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2" for="booking-date">Date</label>
+<input class="w-full rounded-xl border border-outline-variant bg-surface px-4 py-3 focus:border-primary focus:ring-primary" id="booking-date" name="date" type="date"/>
+<p class="mt-2 hidden text-sm text-error" id="booking-date-error"></p>
+</div>
+<button class="signature-gradient text-on-primary px-8 py-4 rounded-full text-base font-bold shadow-xl shadow-primary/20 hover:scale-[1.01] transition-transform" data-cta-button="" type="submit">
+                        Book Your Appointment Now
+                    </button>
+</form>
+<p class="mt-4 hidden rounded-xl bg-primary-container px-4 py-3 text-sm font-medium text-on-primary-fixed-variant" id="booking-success"></p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 container mx-auto px-6 md:px-12">
+<div class="signature-gradient rounded-[3rem] p-12 md:p-24 text-center text-on-primary shadow-2xl relative overflow-hidden">
+<!-- Decorative circle -->
+<div class="absolute -top-32 -left-32 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-32 -right-32 w-80 h-80 bg-black/5 rounded-full blur-3xl"></div>
+<div class="relative z-10 max-w-3xl mx-auto space-y-8">
+<h2 class="text-4xl md:text-6xl font-headline leading-tight">Ready to Glow &amp; <br/>Feel Confident?</h2>
+<p class="text-xl opacity-90">Limited slots available today. Your transformation is just a click away.</p>
+<button class="bg-surface-container-lowest text-primary px-12 py-5 rounded-full text-xl font-bold shadow-2xl hover:scale-105 active:scale-95 transition-transform mt-8" data-cta-button="">
+                    Book Your Appointment Now
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-zinc-100 dark:bg-zinc-950">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="text-xl font-serif italic text-rose-900 dark:text-rose-100">GlowUp Salon</div>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">The Ethereal Atelier. Crafted for the modern woman who values luxury and authenticity.</p>
+</div>
+<div>
+<h4 class="font-headline text-rose-900 dark:text-rose-200 mb-6">Location</h4>
+<p class="text-zinc-500 dark:text-zinc-400 text-sm">
+                    Road No. 45, Jubilee Hills<br/>
+                    Hyderabad, Telangana 500033
+                </p>
+<div class="mt-4 w-full h-24 bg-surface-container rounded-lg overflow-hidden grayscale">
+<img class="w-full h-full object-cover opacity-50" data-alt="map location of Jubilee Hills Hyderabad" data-location="Hyderabad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdzBoHzfXMRmQd99_VHaQLWe30FXcrEzSKlQm9ekcymRfvBgJZauLlZxrUV_hf9W8DIIjNdkMyCHofgd6Dwr2v2Cl3rIzQhza4GGUaYAUrdfJduVVNbZb3rDf7Ny0nrcajx2pDl5X-fQHMHUD583M3ivRH_ZIV9snOTni-ElZg103eScgF8-i1T8gN91NEMggFPw2psMj_J6ww6Bu8hGywsp2IG45kZOzWKbncanfT25LOyvm9w4HZbqYgzSLbvEMZ_P5oOcTf7tI"/>
+</div>
+</div>
+<div>
+<h4 class="font-headline text-rose-900 dark:text-rose-200 mb-6">Explore</h4>
+<ul class="space-y-3 text-sm">
+<li><a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-700 dark:hover:text-rose-300 transition-opacity" href="#">Services</a></li>
+<li><a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-700 dark:hover:text-rose-300 transition-opacity" href="#">About Us</a></li>
+<li><a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-700 dark:hover:text-rose-300 transition-opacity" href="#">Portfolio</a></li>
+<li><a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-700 dark:hover:text-rose-300 transition-opacity" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-rose-900 dark:text-rose-200 mb-6">Connect</h4>
+<div class="flex gap-4 mb-6">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-700" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-700" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+<p class="text-xs text-zinc-500 dark:text-zinc-400">© 2024 GlowUp Salon. The Ethereal Atelier.</p>
+<div class="flex gap-4 mt-2">
+<a class="text-xs text-zinc-500 dark:text-zinc-400 underline" href="#">Privacy Policy</a>
+<a class="text-xs text-zinc-500 dark:text-zinc-400 underline" href="#">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="../main.js"></script>
+</body></html>

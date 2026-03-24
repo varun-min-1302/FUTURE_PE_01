@@ -1,0 +1,17 @@
+You are a conversion-focused copywriter.
+
+Generate 10 high-converting CTA lines for:
+
+Business: {business_name}
+
+Purpose:
+- Booking
+- Contact
+- Inquiry
+
+Tone: {tone}
+
+Requirements:
+- Short and action-driven
+- Persuasive
+- Suitable for website buttons

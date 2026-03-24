@@ -1,0 +1,34 @@
+You are a professional website copywriter specializing in local businesses.
+
+Generate a high-converting homepage for the following business:
+
+Business Name: {business_name}
+Location: {location}
+Target Audience: {audience}
+Services: {services}
+USP: {usp}
+
+Structure the output as:
+
+1. Hero Section
+   - Headline
+   - Subheadline
+   - CTA
+
+2. About Section
+
+3. Services Overview
+
+4. Why Choose Us (3–5 bullet points)
+
+5. Testimonials (2 examples)
+
+6. Final CTA
+
+Tone: {tone}
+
+Requirements:
+- Keep it simple and clear
+- Make it persuasive and engaging
+- Focus on conversions (booking/contact)
+- Ensure it is website-ready content

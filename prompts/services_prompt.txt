@@ -1,0 +1,22 @@
+You are a professional website copywriter.
+
+Generate service page content for:
+
+Business Name: {business_name}
+Service: {service}
+Target Audience: {audience}
+
+Structure:
+
+1. Service Introduction
+2. Benefits (3–5 points)
+3. Process (step-by-step)
+4. Why Choose Us
+5. CTA
+
+Tone: {tone}
+
+Requirements:
+- Clear and customer-focused
+- Easy to read
+- Persuasive and helpful

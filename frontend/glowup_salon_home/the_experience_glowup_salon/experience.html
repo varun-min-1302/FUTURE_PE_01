@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#75584d",
+              "surface-dim": "#dadada",
+              "on-error-container": "#93000a",
+              "primary": "#964261",
+              "on-secondary-fixed": "#241a00",
+              "on-secondary": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#4d4447",
+              "surface-container-highest": "#e2e2e2",
+              "secondary-fixed": "#ffe088",
+              "inverse-primary": "#ffb0c9",
+              "on-surface": "#1a1c1c",
+              "surface-container-high": "#e8e8e8",
+              "tertiary-fixed-dim": "#e4beb2",
+              "secondary-fixed-dim": "#e9c349",
+              "surface-container": "#eeeeee",
+              "on-tertiary-container": "#806358",
+              "surface": "#f9f9f9",
+              "inverse-surface": "#2f3131",
+              "background": "#f9f9f9",
+              "on-primary-fixed": "#3e001e",
+              "surface-container-low": "#f3f3f3",
+              "secondary-container": "#fed65b",
+              "primary-fixed-dim": "#ffb0c9",
+              "secondary": "#735c00",
+              "on-background": "#1a1c1c",
+              "on-tertiary-fixed": "#2b160f",
+              "error-container": "#ffdad6",
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "on-primary-container": "#a34c6c",
+              "inverse-on-surface": "#f1f1f1",
+              "primary-fixed": "#ffd9e2",
+              "on-secondary-fixed-variant": "#574500",
+              "tertiary-fixed": "#ffdbce",
+              "outline": "#7f7478",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#745c00",
+              "error": "#ba1a1a",
+              "surface-variant": "#e2e2e2",
+              "on-primary-fixed-variant": "#792b4a",
+              "surface-bright": "#f9f9f9",
+              "primary-container": "#ffe3e9",
+              "on-tertiary-fixed-variant": "#5b4137",
+              "tertiary-container": "#ffe5dc",
+              "surface-tint": "#964261",
+              "outline-variant": "#d0c3c7"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-fixed">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<span class="text-2xl font-bold tracking-tighter text-[#964261] font-headline">GlowUp Salon</span>
+<div class="hidden md:flex items-center space-x-8 font-headline font-medium text-lg">
+<a class="text-zinc-600 hover:text-[#964261] transition-colors" href="#">Home</a>
+<a class="text-zinc-600 hover:text-[#964261] transition-colors" href="#">Services</a>
+<a class="text-zinc-600 hover:text-[#964261] transition-colors" href="#">About</a>
+<a class="text-zinc-600 hover:text-[#964261] transition-colors" href="#">Testimonials</a>
+<a class="text-[#964261] border-b-2 border-[#964261] pb-1" href="#">Experience</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-medium hover:scale-95 active:scale-90 transition-all shadow-lg shadow-primary/20" data-cta-button="">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<main class="pt-24 overflow-x-hidden">
+<!-- Hero Section: Editorial Intro -->
+<section class="relative min-h-[921px] flex items-center px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full">
+<div class="md:col-span-6 z-10">
+<span class="text-primary font-bold tracking-[0.2em] text-sm uppercase mb-4 block">The Art of Self-Care</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold leading-[1.1] text-on-surface mb-8">
+                        Experience <br/> <span class="italic font-normal text-on-surface-variant">The Glow.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed mb-10">
+                        A sensory journey designed to transcend the ordinary. Every touch, every scent, every sound is curated for your ultimate transformation.
+                    </p>
+<div class="flex items-center gap-4">
+<div class="h-[1px] w-20 bg-outline-variant"></div>
+<span class="font-headline italic text-xl">Since 2024</span>
+</div>
+</div>
+<div class="md:col-span-6 relative h-[600px]">
+<div class="absolute inset-0 translate-x-8 translate-y-8 bg-primary-container rounded-xl"></div>
+<img alt="Interior view" class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-2xl" data-alt="Luxurious minimalist salon interior with soft cream walls, arched mirrors, warm accent lighting, and elegant velvet chairs in a serene atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUFEBDt4BU-QDLU8FuA3eojEImWhoEAZyuAv1HFLKjpTcqRiO6FaZCO2Hx634istwgNYDi21lgTSoKIskH0vykXqEvCzLcStBN0IH3Ihcn59DTL_YfmztXw5-TnsMqOmQAUyRBbkzDefvRo0bxsnmHxdszEF6vfa3BMXogfN07hxrNh0ImbBDxRW4F8ZvKv7xCG2Kiq689tuAgqwY9gJbYKKkutokACRlX6Drh2m6U0uIITb6QskUK3ikbhXh3aw33hE7mhgZss3U"/>
+</div>
+</div>
+</section>
+<!-- Section 1: The Sanctuary -->
+<section class="py-32 bg-surface-container-low rounded-t-[5rem]">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-5xl font-headline font-bold mb-6 text-on-surface">The Sanctuary</h2>
+<p class="text-xl text-on-surface-variant">Step into a world where noise fades and tranquility takes over. Our space is built on the philosophy of minimalist luxury—where every curve and shadow is designed to calm the mind.</p>
+</div>
+<span class="text-8xl font-headline font-bold text-outline-variant opacity-20 hidden md:block">01</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6 group">
+<div class="aspect-[4/5] overflow-hidden rounded-lg">
+<img alt="Peaceful corner" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of a minimalist relaxation corner in a salon featuring a single designer chair, a marble side table with incense, and soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvC3g4Qt4pLz66aruIrOFk1xxjj4PppPSEBU7SMmOL2ePwmReh7w8gLLJ2cSL732VnQfQsjNACDFiepxeGvU34CG0Jk4gaJ-QwKibyqH9Y5dwuUkgCRTYQycsKwlMOxUEfV1eZPliJkiv7g6NdX4StxFRWyDaxEa1z12jT2QiqE6_813s0FlzyrQ9lAhVXZIXBMRLRyetIauFvNNcMBn-dp-x5L4lASkk0xhbWn-fTnZMOZgDyMyR_cbGGDwwbsi8uKssoXMp0Yj0"/>
+</div>
+<h3 class="text-2xl font-headline font-semibold">Tonal Harmony</h3>
+<p class="text-on-surface-variant">A palette of warm nudes and muted blushes creates a canvas of calm for your soul.</p>
+</div>
+<div class="space-y-6 group translate-y-12">
+<div class="aspect-[4/5] overflow-hidden rounded-lg">
+<img alt="Arched architecture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Architectural detail of elegant plaster arches in a luxury spa with soft ambient lighting and organic textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8V0pIGSc1t6uLLckpqWJ7UMvCMyV96F5Bh3TI5ryKnV9BzFmzm7K4Cr2lNtfoDE56M1AI-RbfBaoOg8eNV7s78DTi4iipwAAwjc8UwM854ByTGSQSmMaQS633_ksuAvkqHOfPhkbFpkrkg8UIloox5zMmyL3y3YyAseUBkACkCBqYVkzgueEd9y-yhqEYbGYRjhHw9deolaz2QVVCRMeAgD37sFRKxmnGJ3oIXVQllo-wIbFHS-PUSGyJ8rObFcEJjHEfmc-zzlw"/>
+</div>
+<h3 class="text-2xl font-headline font-semibold">Organic Flow</h3>
+<p class="text-on-surface-variant">Fluid lines and natural materials mirror the organic beauty of the self.</p>
+</div>
+<div class="space-y-6 group">
+<div class="aspect-[4/5] overflow-hidden rounded-lg">
+<img alt="Scented candle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A luxury scented candle burning on a stone surface with a soft floral arrangement in the background creating an ethereal atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHqWxRGxtbyS_PgayVwMiFUvAke27YHVgKeyIVGYtYpo7v4ZcX2adhjYeVJvh9PVtExxyk0A5i5AUq31Gf4mJLQAxOV2EDNUM-qFKU5MM-FWLDStIXHE13tNC68mI7ud49LIUilLoqg3vkRCK0jP8VHuS7zPxx4Zv6oNYOEJJzIqI4kU7Q-tWYa3122xrcxGxDohi4EpqyV-_TWPzKewH6FnhCGTxXWbknuXOo94htdBahSJ0T_1CTsVIFKF6MsYAiOV8sfe1_-w8"/>
+</div>
+<h3 class="text-2xl font-headline font-semibold">Olfactory Bliss</h3>
+<p class="text-on-surface-variant">Notes of sandalwood and white tea gently fill the air, grounding your senses.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: The Ritual -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-24">
+<h2 class="text-5xl font-headline font-bold mb-4">The Ritual</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Your journey is a carefully choreographed sequence of moments designed to pamper and prepare you for the world.</p>
+</div>
+<div class="relative">
+<!-- Progress Line -->
+<div class="absolute top-1/2 left-0 w-full h-px bg-outline-variant/30 -translate-y-1/2 hidden md:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm text-center border-t-4 border-primary">
+<div class="w-16 h-16 bg-primary-container text-primary rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-3">Consultation</h4>
+<p class="text-sm text-on-surface-variant">We listen to your desires and craft a bespoke plan for your unique features.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm text-center border-t-4 border-primary/40">
+<div class="w-16 h-16 bg-surface-container-high text-on-surface-variant rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">coffee</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-3">Sip &amp; Settle</h4>
+<p class="text-sm text-on-surface-variant">Enjoy our curated selection of gourmet beverages and botanical infusions.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm text-center border-t-4 border-primary/40">
+<div class="w-16 h-16 bg-surface-container-high text-on-surface-variant rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">content_cut</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-3">Transformation</h4>
+<p class="text-sm text-on-surface-variant">Relax while our master artisans perform their magic using advanced techniques.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm text-center border-t-4 border-primary/40">
+<div class="w-16 h-16 bg-surface-container-high text-on-surface-variant rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">auto_awesome</span>
+</div>
+<h4 class="font-headline font-bold text-xl mb-3">The Final Glow</h4>
+<p class="text-sm text-on-surface-variant">The big reveal, complete with professional styling and personalized tips.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Premium Essentials -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<img alt="Luxury products" class="w-full h-[500px] object-cover rounded-lg shadow-xl" data-alt="Artistic close-up of luxury skincare and haircare bottles arranged on a white marble surface with soft natural light and water droplets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMQaUM4N0u-24-AtsvuYHygwkgDu__PdaPdGDfSoeiB6RGP5uTRKD9uzYG41rH6CK5q_LLdigOsOAFlpba0T2tRLllm2IJRpe4MRXOfEDD13cSGj_qQxz6LEpOjLKFd1bbzPb92JK0LnQzGw3oG06j5wh-G_4ErldtX-GzsLYkv01jYABLBD3nLdwBl_xr_cVpc49pZlnNgEcd53MedUUXfSPT5F1cHShcIejahZ-K2zyOoPpdRfEvZkZ6rBXS-IynzsAs7e7ZL6k"/>
+<div class="absolute -bottom-10 -right-10 bg-white p-12 rounded-xl shadow-2xl hidden md:block">
+<span class="text-secondary font-headline italic text-4xl block mb-2">Exclusive</span>
+<span class="text-on-surface-variant text-sm tracking-widest uppercase">Partnership</span>
+</div>
+</div>
+<div>
+<h2 class="text-5xl font-headline font-bold mb-8">Premium Essentials</h2>
+<p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
+                            We believe that luxury is found in the details. That’s why we only use the world’s most prestigious brands, ensuring that every drop that touches your skin and hair is of the highest efficacy.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h5 class="font-bold text-on-surface">Sustainable Sourcing</h5>
+<p class="text-sm text-on-surface-variant">Every tool and product is ethically sourced and cruelty-free.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h5 class="font-bold text-on-surface">Precision Tools</h5>
+<p class="text-sm text-on-surface-variant">Utilizing the latest technology in hair and skin health maintenance.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h5 class="font-bold text-on-surface">Artisan Blends</h5>
+<p class="text-sm text-on-surface-variant">Customized masks and serums mixed in-house for your specific needs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Escape the Ordinary -->
+<section class="py-32 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -z-10"></div>
+<div class="max-w-4xl mx-auto px-8 text-center">
+<span class="material-symbols-outlined text-primary text-6xl mb-8" data-weight="fill">spa</span>
+<h2 class="text-5xl font-headline font-bold mb-8 italic text-on-surface">Escape the Ordinary</h2>
+<p class="text-2xl font-body font-light text-on-surface-variant leading-relaxed italic mb-12">
+                    "At GlowUp, we don't just change your look; we shift how you feel when you look in the mirror. It's about that quiet confidence that radiates from within after a moment of true self-indulgence."
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-12">
+<div class="text-center">
+<div class="text-4xl font-headline font-bold text-primary mb-2">15k+</div>
+<p class="text-sm uppercase tracking-widest text-on-surface-variant">Happy Clients</p>
+</div>
+<div class="h-12 w-px bg-outline-variant hidden md:block"></div>
+<div class="text-center">
+<div class="text-4xl font-headline font-bold text-primary mb-2">120+</div>
+<p class="text-sm uppercase tracking-widest text-on-surface-variant">Specialized Services</p>
+</div>
+<div class="h-12 w-px bg-outline-variant hidden md:block"></div>
+<div class="text-center">
+<div class="text-4xl font-headline font-bold text-primary mb-2">4.9/5</div>
+<p class="text-sm uppercase tracking-widest text-on-surface-variant">Guest Rating</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery / Visual Proof: Bento Grid -->
+<section class="py-32 max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl">
+<img alt="Happy client" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Candid portrait of a glowing, confident woman with perfectly styled hair smiling after a salon session in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkeDLURCf8XNznemExAOLU4uBJ2oHg7epibtD1DjVsblDMeZcXXTvsFvPTAY_02yNjRxQN4yzOdv5Ur3IsMaVq3-Yjw8CxdRsYiTVmoZmR6L4sgJsCNlNOjHn3qMXhdAByq3YvU4dUVUpNGU9JrcHDjSJoozdY1mhBsNBi1K07IU_ZV4eGo7PxdOHJCaQo9EGz-88L502mDq2v056rBja5fsRzxwTUPSZf38Xsr3JF-rEnjclIRmDDSeX022iViTpwV84Kvu5jT0I"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative overflow-hidden rounded-xl">
+<img alt="Makeup brush" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Close-up of high-end makeup brushes and beauty tools with a soft bokeh background and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1cUtlzJr61pJrn5pTVqxUxGAnCQEBm-ulID7EYD6DT_3UCgDfdbSc33RDnl7hBB1iSxdZgeNdpThWCtxurWmi4vfYQsQXpWhosys4QXf4vW_mnLDkb6QzDpbyXXvwchmPrq9A7LJlFXVbCmglBgPsb2Dhf0XLpp210RDXWGE7b4_LVBofZJRDfays6XSI_VShCrIs0gcngGWeDjpVbPq0KS1YWKpIvNRT_oe_B5MstDLg-gKRr-IlWx00vy-mI_Mdjcc0JLcSbjg"/>
+</div>
+<div class="md:col-span-1 md:row-span-2 relative overflow-hidden rounded-xl">
+<img alt="Hair wash ritual" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="Serene scene of a client experiencing a relaxing hair wash ritual with steam and soft ambient light in a luxury salon sink area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz1Fm9adE-nmBdPFFoIMvK2b1OkpZU2qw0OkBepZyTNnPcq9eSniW5AfIK7djBoog5t-mYJZSnnmVnyxdHdyC3kw3GkL0fK42bp20qcG67HiY2QEzBoRKAFsKFxS_Amsx0MAPx92BEadzqG5aQbgyypB-R-SqNZ-lLYRU3KIuKesmB7_pXl6ADz9_0fMb1G37Bc5zJeDTE-urylR7DBAAT2hI_5LIQhEiCBfOY-9rsD3uFw1IZa6kMdzE-IkHP-t5PZOkefhWrDhM"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative overflow-hidden rounded-xl">
+<img alt="Botanical tea" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" data-alt="A beautifully presented cup of herbal tea with dried flowers and a gold spoon on a textured tray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6_1q29aeCNnbwkeokExykITGHCawSPan0Bxz-JT5b4V6JwM37aNExN6st_45uy7q9kc9l0Y48eWJBkyGcpiwyaTgzm7v5F1aVgHApJcTnDuBIgnRUkT0oh1nxow3IjbvtCyGR5QwLva9NQoanAu4BmY0lO_X5vQGu4OL1jq2DMlKudtYAgkBTRGH7-iDb3S7IwIZk_64Xru7GUkwk-9eE7VqLOggf1Ho9s7fMTleZHmz0qUuErIS75xI4ZKIU4WqDxIdfMyzukfA"/>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 bg-primary text-on-primary rounded-t-[5rem] mt-20">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<h2 class="text-5xl md:text-7xl font-headline font-bold mb-10 leading-tight">Ready to Begin <br/> Your Journey?</h2>
+<p class="text-xl opacity-90 mb-12 max-w-2xl mx-auto font-light">Join the list of those who choose to prioritize their glow. Reservations are open for the coming month.</p>
+<button class="bg-surface text-primary px-12 py-5 rounded-full text-xl font-bold hover:scale-105 transition-transform shadow-2xl" data-cta-button="">
+                    Reserve Your Session
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] bg-[#f3f3f3] dark:bg-zinc-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-12 py-16">
+<div class="space-y-6">
+<span class="font-['Noto_Serif'] text-xl font-semibold text-[#964261]">GlowUp Salon</span>
+<p class="font-['Plus_Jakarta_Sans'] text-sm text-zinc-600 dark:text-zinc-400">Defining the standard of modern luxury in beauty through editorial excellence and artistic touch.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-zinc-900">Explore</h4>
+<ul class="space-y-2 text-sm text-zinc-500">
+<li class="hover:text-[#964261] hover:translate-x-1 transition-all"><a href="#">Services</a></li>
+<li class="font-bold text-[#964261]"><a href="#">Experience</a></li>
+<li class="hover:text-[#964261] hover:translate-x-1 transition-all"><a href="#">Artistry</a></li>
+<li class="hover:text-[#964261] hover:translate-x-1 transition-all"><a href="#">Boutique</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-zinc-900">Information</h4>
+<ul class="space-y-2 text-sm text-zinc-500">
+<li class="hover:text-[#964261] hover:translate-x-1 transition-all"><a href="#">Privacy Policy</a></li>
+<li class="hover:text-[#964261] hover:translate-x-1 transition-all"><a href="#">Terms of Service</a></li>
+<li class="hover:text-[#964261] hover:translate-x-1 transition-all"><a href="#">Contact Us</a></li>
+<li class="hover:text-[#964261] hover:translate-x-1 transition-all"><a href="#">Careers</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-zinc-900">Connect</h4>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-zinc-200 flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-zinc-200 flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+<p class="text-xs text-zinc-400 mt-4 leading-relaxed">
+                    Hyderabad, TG. <br/>
+                    +91 (0) 40 2345 6789
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-zinc-200/50 text-center">
+<p class="font-['Plus_Jakarta_Sans'] text-sm text-zinc-600 dark:text-zinc-400">© 2024 GlowUp Salon Hyderabad. All rights reserved.</p>
+</div>
+</footer>
+<script src="../main.js"></script>
+</body></html>
