@@ -86,6 +86,15 @@ To enhance the project beyond static content, the following functionalities were
 
 These features demonstrate how structured prompts can translate into dynamic website behavior.
 
+## 🏗️ Project Architecture
+
+inputs/ → Business details  
+prompts/ → Structured prompt system  
+outputs/ → AI-generated content  
+frontend/ → Website implementation  
+
+This project demonstrates a complete AI content generation workflow.
+
 ## 🚀 Outcome
 A reusable AI-powered system that generates complete website content for local businesses.
 
